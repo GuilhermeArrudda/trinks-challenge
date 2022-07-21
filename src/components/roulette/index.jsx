@@ -1,6 +1,7 @@
-import { Box, Button, FormControl, TextField } from '@mui/material'
+import { Box, Button, TextField } from '@mui/material'
 import React, { useState } from 'react'
 import { Wheel } from 'react-custom-roulette'
+import ModalGame from '../modal'
 import styles from './styles'
 
 const data = [
@@ -14,6 +15,7 @@ export default function Roulette() {
 	const [mustSpin, setMustSpin] = useState(false)
 	const [prizeNumber, setPrizeNumber] = useState(0)
 	const [input, setInput] = useState('')
+	const [openModal, setOpenModal] = useState(false)
 
 	const handleSpinClick = (e) => {
 		const newPrizeNumber = Math.floor(Math.random() * data.length)
@@ -21,6 +23,17 @@ export default function Roulette() {
 		setMustSpin(true)
 		e.preventDefault()
 		console.log(input)
+	}
+
+	const handleModal = () => {
+		setTimeout(() => {
+			setOpenModal(true)
+		}, '11000')
+	}
+
+	const handleGame = (e) => {
+		handleSpinClick(e)
+		handleModal()
 	}
 
 	return (
@@ -35,10 +48,11 @@ export default function Roulette() {
 					setMustSpin(false)
 				}}
 			/>
-			<form style={styles.form} onSubmit={handleSpinClick}>
+			<form style={styles.form} onSubmit={handleGame}>
 				<TextField id="outlined-basic" variant="outlined" type='number' sx={styles.textField} onChange={(e) => setInput(e.target.value)} placeholder='insira um número'/>
 				<Button variant="contained" sx={styles.button} type='submit'>SPIN</Button>
 			</form>
+			<ModalGame open={openModal} setOpen={setOpenModal}/>
 		</Box>
 	)
 }
