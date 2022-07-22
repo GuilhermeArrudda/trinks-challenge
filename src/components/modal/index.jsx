@@ -1,5 +1,7 @@
 import { Box, Modal, Typography } from '@mui/material'
 import React from 'react'
+import useModal from '../../hooks/useModal'
+import usePrizeNumber from '../../hooks/usePrizeNumber'
 import { styles } from './styles'
 
 const data = [
@@ -9,14 +11,16 @@ const data = [
 	{title: 'Tente novamente!', message: 'Seu número não é sortudo nem feliz. Clique no botão abaixo e escolha um novo número para concorrer aos prêmios.'}
 ]
 
-export default function ModalGame({ open, setOpen, prizeNumber }) {
+export default function ModalGame() {
 
-	const handleClose= () => setOpen(false)
+	const { prizeNumber } = usePrizeNumber()
+	const { openModal, setOpenModal } = useModal()
+	const handleClose= () => setOpenModal(false)
 
 	return(
 		<>
 			<Modal
-				open={open}
+				open={openModal}
 				onClose={handleClose}
 			>
 				<Box sx={styles.modal}>
