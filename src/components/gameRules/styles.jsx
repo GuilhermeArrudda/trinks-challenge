@@ -24,5 +24,13 @@ export const styles = {
 	text: {
 		ml: '20px',
 		fontWeight: '500'
+	},
+	arrow: {
+		display: 'flex',
+		gap: '10px',
+		alignItems: 'end',
+		mt: '20px',
+		ml: '18px',
+		fontSize: '10px'
 	}
 }
