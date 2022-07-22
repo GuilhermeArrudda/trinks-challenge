@@ -1,4 +1,5 @@
 import { Box, Card, CardMedia, Divider, List, Typography } from '@mui/material'
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 import React from 'react'
 import { styles } from './styles'
 import logo from '../../assets/logo.png'
@@ -67,6 +68,10 @@ export default function Rules() {
 					</ul>
 				</Typography>
 			</List>
+			<Box sx={styles.arrow}>
+				Role para baixo
+				<ArrowDownwardIcon sx={{ ml: '40px' }}/>
+			</Box>
 		</Card>
 	)
 }
