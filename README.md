@@ -60,7 +60,8 @@ Logo, 7 é um número sortudo.
   ```
 2. Instale o projeto usando o comando ```npm i -f```.
 ```sh 
-PS: O projeto está com um conflito em um dos pacotes, por isso estamos forçando a instalação, mas ele está perfeito! 
+PS: O projeto está com um conflito em um dos pacotes, por isso estamos forçando a instalação, 
+mas ele está perfeito! 
 Caso prefira existe um link para testar a aplicação na web. https://trinks-challenge.vercel.app/
 ```
 3. Agora que o projeto foi instalado, pode usar o comando ```npm start``` para rodá-lo.
