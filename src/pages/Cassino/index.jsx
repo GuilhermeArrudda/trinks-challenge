@@ -23,7 +23,6 @@ export default function Cassino() {
 			return false
 		}
 	}
-	console.log(handlePage())
 
 	return (
 		<Box style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '200px', backgroundImage: `url(${background})`, backgroundSize: 'cover', minHeight: '100vh'}}>
