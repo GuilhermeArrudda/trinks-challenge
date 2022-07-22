@@ -26,7 +26,8 @@ Nós começamos com uma lista de inteiros começando em 1:
 
 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15...
 
-Então removemos todos os números com posição múltipla de 2 (todos números pares), deixando todos os inteiros ímpares: 
+Então removemos todos os números com posição múltipla de 2 (todos números pares), 
+deixando todos os inteiros ímpares: 
 
 1, 3, 5, 7, 9, 11, 13, 15...
 
@@ -49,13 +50,14 @@ Logo, 7 é um número sortudo.
 
 ### Tecnologias utilizadas
 
-```sh
-**Front-end:**
-```
+**Front-end:** ```React```, ```Materia-UI```, ```Styled-Components``` 
 
 ### Instalação
 
 1. Clone o projeto usando ```git clone``` e uma das chaves disponíveis no repositório.
+  ```sh
+  Ex: git clone https://github.com/GuilhermeArrudda/trinks-challenge.git
+  ```
 2. Instale o projeto usando o comando ```npm i -f```.
 ```sh 
 PS: O projeto está com um conflito em um dos pacotes, por isso estamos forçando a instalação, mas ele está perfeito! 
@@ -65,6 +67,6 @@ Caso prefira existe um link para testar a aplicação na web. https://trinks-cha
 
 ### Utilizando a aplicação
 
-A aplicação é bem simples mas está muito divertida, ao lado esquerdo da tela existem algumas informações sobre as regras e funcionamento do game, rolando para baixo dentro deste quadrado é possível ler todas está informações.
-Já do lado direito existe uma roleta, um campo para adicionar o número de sua preferência e um botão, ao inserir o número e apertar o botão a roleta irá rodar e dizer se o número escolhido é feliz e/ou sortudo.
+A aplicação é bem simples mas está muito divertida, ao lado esquerdo da tela existem algumas informações sobre as regras e funcionamento do game, rolando para baixo dentro deste quadrado é possível ler todas está informações.<br/>
+Já do lado direito existe uma roleta, um campo para adicionar o número de sua preferência e um botão, ao inserir o número e apertar o botão a roleta irá rodar e dizer se o número escolhido é feliz e/ou sortudo.<br/>
 Por fim, aproveite a experiência e se surpreenda 🎊!
